@@ -1,4 +1,83 @@
+@font-face {
+  font-family: ParkLane;
+  src: url('/styles/parklane.woff') format('woff');
+}
+
+@font-face {
+  font-family: Champagne;
+  src: url('/styles/champagne.woff') format('woff');
+}
+
+span.info {
+  font-size: 1.5em;
+  font-style: italic;
+
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  text-align: center;
+}
+
+a:link {
+  color: inherit;
+  text-decoration: none;
+
+  transition: all 1s;
+}
+
+a:hover {
+  color: #FFFFFF;
+  transition: all 1s;
+}
+
+
 body {
   background-image: url('/images/tile.png');
   background-repeat: repeat;
+
+  color: #dca443;
+
+  text-align: center;
+
+  font-family: Champagne;
+}
+
+div#container {
+  background-color: rgba(0,0,0,0.9);
+  text-align: center;
+  
+  border-radius: 5px;
+
+  position: relative;
+
+  width: auto;
+  height: 90%; 
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+
+
+  padding: 1em;
+  padding-top: 0;
+}
+
+hr.flourish {
+  height: 40px;
+  background: url('/images/flourish.svg') no-repeat 50% 50%;
+  margin: 0.5em 0;
+  border: 0;
+}
+
+
+h1 {
+  font-family: ParkLane;
+  font-size: 4em;
+  letter-spacing:0.05em; 
+  margin-bottom: 0.2em;
 }
